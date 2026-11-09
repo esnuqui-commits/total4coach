@@ -1,0 +1,41 @@
+TOTAL4COACH 2.1.1 · version web para GitHub Pages (iPad) · CON MODO SIN CONEXION
+=================================================================================
+La carpeta TOTAL4COACH_web es la aplicacion lista para publicar (index.html, sw.js, ext/, icons/, manifest...).
+
+SI YA LA TIENES PUBLICADA EN GITHUB (tu caso): ACTUALIZAR PARA TENER MODO SIN CONEXION
+ 1. En tu repositorio: "Add file" > "Upload files".
+ 2. Sube estos DOS archivos de la carpeta TOTAL4COACH_web: index.html y sw.js (sustituyen a los antiguos). Commit changes.
+    (Sin problema si prefieres subir todo el contenido de nuevo.)
+ 3. Espera 1-2 minutos. En el iPad, con CONEXION, abre la app desde su icono, ciérrala del todo y vuelve a abrirla una vez.
+    En esa primera apertura la app se guarda en el iPad.
+ 4. Comprobacion: pon el iPad en MODO AVION y abre la app desde el icono. Debe abrir con tus datos.
+
+PUBLICAR EN GITHUB POR PRIMERA VEZ
+ 1. github.com > "New repository" (por ejemplo total4coach), Public.
+ 2. "Add file" > "Upload files": sube el CONTENIDO de TOTAL4COACH_web (index.html, sw.js, manifest.webmanifest, version.txt y las carpetas ext e icons),
+    no la carpeta en si. index.html debe quedar en la raiz. Commit changes.
+ 3. Settings > Pages > Source "Deploy from a branch", rama main, carpeta "/ (root)" > Save.
+ 4. Direccion: https://TU_USUARIO.github.io/total4coach/
+ 5. En el iPad, Safari: abrir la direccion > Compartir > "Anadir a pantalla de inicio".
+
+QUE FUNCIONA SIN CONEXION
+ - Toda la aplicacion: planificacion, plantillas, ejercicios, partidos, scouting, evaluacion, control de carga, PDF y copias de seguridad.
+ - Tus datos se guardan en el iPad (no necesitan Internet).
+ - Importar listas de Excel/PDF en Grupos: funciona sin conexion si la app se abrio al menos una vez con Internet tras esta actualizacion.
+QUE SIGUE NECESITANDO INTERNET
+ - Reproducir videos de YouTube en las listas de reproduccion.
+ - La deteccion con IA de AutoCam (descarga un modelo la primera vez).
+
+ACTUALIZACIONES FUTURAS
+ - Con conexion, la app usa siempre la ultima version publicada y renueva su copia guardada.
+ - Al publicar una version nueva, cambia el numero VERSION al principio de sw.js (por ejemplo '2.1.2') y sube los archivos nuevos.
+ - Abre la app con conexion de vez en cuando (al menos una vez por semana) para que se mantenga actualizada.
+
+DATOS (importante)
+ - Los datos viven en el propio dispositivo; el iPad no comparte datos con el Mac ni con Safari. Abre SIEMPRE la app desde el icono.
+ - Pasar datos del Mac al iPad: en el Mac "Copia de seguridad completa" > "Descargar copia completa" (.json); envialo al iPad (AirDrop o iCloud Drive);
+   en la app del iPad: "Restaurar copia".
+ - Haz copias de seguridad con regularidad.
+
+ICONO EN EL MAC (app .app)
+ Si el Mac muestra el icono generico: arrastra la app a Aplicaciones y en Terminal: touch /Applications/VICTOTALCOACH_V2.app && killall Finder Dock
